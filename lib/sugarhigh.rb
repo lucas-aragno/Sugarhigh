@@ -7,11 +7,14 @@ module Sugarhigh
 
     attr_accessor :headers, :refresh_token
 
-    base_uri 'https://edsurge.sugarondemand.com/rest/v10'
-
-    def initialize
+    def initialize(uri = '')
       @headers = {}
       @refresh_token = ''
+      set_uri uri
+    end
+
+    def set_uri(uri)
+      self.class.base_uri uri
     end
 
     def connect(params)
