@@ -1,7 +1,20 @@
 # Sugarhigh
 
-TODO: write readme someday
+  Simple API wrapper over SugarCRM's REST API
 
+  ## Install
+
+   ```
+     gem install sugarhigh
+   ```
+
+  ## Connecting to your SugarCRM instance
+  
+  ```ruby
+    @conn = Sugarhigh::Client.new 'http://yourinstance.sugar.com'
+    params = {:grant_type => "password", :client_id => "sugar", :client_secret=> "", :username=> "admin", :password => "SUPERPASSWORD", :platform => "base"}
+    @conn.connect params
+  ```
 # DON'T BE A DICK PUBLIC LICENSE
 
 > DON'T BE A DICK PUBLIC LICENSE
