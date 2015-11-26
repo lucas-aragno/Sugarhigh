@@ -43,7 +43,7 @@ module Sugarhigh
       do_request :get,  url_for_resource(resource), params
     end
 
-    def get_recent(params)
+    def get_recent(resource)
       do_request :get,   url_for_resource(resource), params
     end
     
