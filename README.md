@@ -2,13 +2,13 @@
 
   Simple API wrapper over SugarCRM's REST API
 
-  ## Install
+  # Install
 
    ```
      gem install sugarhigh
    ```
 
-  ## Connecting to your SugarCRM instance
+  # Connecting to your SugarCRM instance
   
   ```ruby
     @conn = Sugarhigh::Client.new 'http://yourinstance.sugar.com'
