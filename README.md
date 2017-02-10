@@ -12,7 +12,14 @@
   
   ```ruby
     @conn = Sugarhigh::Client.new 'http://yourinstance.sugar.com'
-    params = {:grant_type => "password", :client_id => "sugar", :client_secret=> "", :username=> "admin", :password => "SUPERPASSWORD", :platform => "base"}
+    params = {
+      :grant_type => "password",
+      :client_id => "sugar",
+      :client_secret=> "",
+      :username=> "admin",
+      :password => "SUPERPASSWORD",
+      :platform => "base"
+     }
     @conn.connect params
   ```
 # DON'T BE A DICK PUBLIC LICENSE
